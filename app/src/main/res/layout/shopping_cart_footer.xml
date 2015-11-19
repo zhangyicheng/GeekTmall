@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.geek.geekmall.views.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/content_black"
+        android:text="猜你喜欢" />
+
+    <com.geek.geekmall.views.HorizontalListView
+        android:id="@+id/like_listview"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:divider="@color/transparent"
+        android:dividerHeight="5.0dip"
+        android:overScrollMode="never"
+        android:layout_marginBottom="33dp"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"/>
+
+</LinearLayout>

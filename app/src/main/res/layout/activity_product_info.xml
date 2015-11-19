@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+    <com.geek.geekmall.views.ViewPagerScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.geek.geekmall.views.ProductImageViewLayout
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <View
+                style="@style/borderline_slide"
+                android:layout_height="1.0dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/content_black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/isFirst"
+                android:visibility="gone"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="首单免费"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="@color/pink" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="该商品参与活动"
+                    android:textSize="13sp"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/imageview"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pink"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/oldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/content_gray"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/borderline_slide"
+                android:layout_height="1.0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yunfei"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/stock"
+                    android:textColor="@color/content_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sales_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sale"
+                    android:textColor="@color/content_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/favor_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/favor"
+                    android:textColor="@color/content_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/borderline_slide"
+                android:layout_height="1.0px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/cover"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/avatar_default" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/cover"
+                    android:singleLine="true"
+                    android:text="商家："
+                    android:textColor="@color/content_black" />
+
+                <TextView
+                    android:id="@+id/store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/text1"
+                    android:singleLine="true"
+                    android:text="我的小店"
+                    android:textColor="@color/pink" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_white_bg"
+                android:orientation="vertical">
+
+                <com.geek.geekmall.views.OptionsItemView
+                    android:id="@+id/tuihuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:optionImage="@drawable/tuihuo"
+                    app:optionTitle="@string/support_service1"
+                    app:optionTitleColor="@color/content_black"
+                    app:optionTitleSize="14" />
+
+                <View
+                    style="@style/borderline_slide"
+                    android:layout_height="1.0px" />
+
+                <com.geek.geekmall.views.OptionsItemView
+                    android:id="@+id/mian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:optionImage="@drawable/youhui"
+                    app:optionTitle="@string/support_service2"
+                    app:optionTitleColor="@color/content_black"
+                    app:optionTitleSize="14" />
+
+                <View
+                    style="@style/borderline_slide"
+                    android:layout_height="1.0px" />
+
+                <com.geek.geekmall.views.OptionsItemView
+                    android:id="@+id/gurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:optionImage="@drawable/guarantee"
+                    app:optionTitle="@string/support_service3"
+                    app:optionTitleColor="@color/content_black"
+                    app:optionTitleSize="14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="选择尺码，颜色分类"
+                android:textColor="@color/content_black"
+                android:textSize="15sp" />
+
+            <View
+                style="@style/borderline_slide"
+                android:layout_height="1.0dp" />
+
+            <LinearLayout
+                android:id="@+id/spec_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="30dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="20dp">
+
+                <com.geek.geekmall.views.CountAdjustView
+                    android:id="@+id/count_ajust_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/remain"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:text="库存0件" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/intruduce"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_radio_top_left_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="介绍"
+                    android:textColor="@color/tab_white_black_selector"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/photos"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_radio_top_center_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="图片"
+                    android:checked="true"
+                    android:textColor="@color/tab_white_black_selector"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/comments"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_radio_top_right_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="评价"
+                    android:textColor="@color/tab_white_black_selector"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <com.geek.geekmall.views.ListViewForScrollView
+                android:id="@+id/attrs_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:fadingEdge="none"
+                android:visibility="gone"
+                android:fadingEdgeLength="0.0dip"
+                android:footerDividersEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <com.geek.geekmall.views.ListViewForScrollView
+                android:id="@+id/photo_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@color/transparent"
+                android:visibility="visible" />
+
+            <include
+                layout="@layout/shopping_cart_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </com.geek.geekmall.views.ViewPagerScrollView>
+
+    <com.geek.geekmall.views.GradientRelativeLayout
+        android:id="@+id/header"
+        style="@style/header"
+        android:background="@drawable/pic_shadow_top"
+        app:endColor="@color/white"
+        app:startColor="@color/white">
+
+        <com.geek.geekmall.views.GradientTextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ico_return_white"
+            android:drawablePadding="0.0dip"
+            android:textColor="@color/white"
+            app:endColor="@color/meilishuo_gray"
+            app:startColor="@color/white" />
+
+        <com.geek.geekmall.views.GradientTextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/goods_ico_share_white"
+            android:drawablePadding="0.0dip"
+            android:textColor="@color/white"
+            app:endColor="@color/meilishuo_gray"
+            app:startColor="@color/white" />
+
+
+    </com.geek.geekmall.views.GradientRelativeLayout>
+
+
+    <include layout="@layout/product_info_toolbar" />
+
+    <Button
+        android:id="@+id/want"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pink_ring_bg"
+        android:text="想要"
+        android:textColor="@color/btn_pink_white_selector"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/animation_cart"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/goods_ico_add_car_animation"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_addlike_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/pic_like_animation"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/return_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_quick_return"
+        android:visibility="gone" />
+</RelativeLayout>

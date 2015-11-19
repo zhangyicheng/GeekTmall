@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            style="@style/headerTextStyle"
+            android:text="申请" />
+        <TextView
+            android:id="@+id/commit"
+            android:layout_alignParentRight="true"
+            style="@style/TopRightBtn"
+            android:text="提交" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="服务类型"
+            android:textColor="@color/content_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="退货退款"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/down_arrow"
+            android:textColor="@color/content_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="退货原因"
+            android:textColor="@color/content_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/reseaon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="请选择退货原因"
+            android:paddingRight="10dp"
+            android:drawableRight="@drawable/down_arrow"
+            android:textColor="@color/content_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="退款金额"
+            android:textColor="@color/content_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:text=""
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:background="@color/white"
+            android:textColor="@color/content_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="退款说明"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/content_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/intro"
+            android:background="@color/transparent"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:hint="最多100个字符"
+            android:maxLength="100"
+            android:textColor="@color/content_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.geek.geekmall.views.NoScrollGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:numColumns="4"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:listSelector="@color/transparent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_marginLeft="25dp"
+        android:scrollbars="none"
+        android:layout_marginRight="25dp"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/upload_add_photo"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

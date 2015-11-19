@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/defult_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/home_banner_default"/>
+    <com.imbryk.viewPager.LoopViewPager
+        android:id="@+id/imageSwicher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.geek.geekmall.views.indicator.CirclePageIndicator
+        android:id="@+id/image_indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

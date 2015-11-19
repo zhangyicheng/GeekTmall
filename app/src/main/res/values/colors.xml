@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="content_light">#5E5E5E</color>-->
+    <!--<color name="content_dark">#EDEDED</color>-->
+    <!--<color name="item_light">#535353</color>-->
+    <!--<color name="item_dark">#EDEDED</color>-->
+    <!--<color name="button_light">#3C3C3D</color>-->
+    <!--<color name="button_dark">#FFFFFF</color>-->
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <!--FFFF366F-->
+    <color name="pink">#fffc3a71</color>
+    <color name="search_item_color">#fff6f6f6</color>
+    <color name="bg_color_gray">#fff6f6f6</color>
+    <color name="order_main_text_gray">#ff999999</color>
+    <color name="title_black">#303030</color>
+    <color name="content_black">#ff5a5a5a</color>
+    <color name="content_gray">#ff9c9c9c</color>
+    <color name="home_text_press_color">#ffff7a9a</color>
+    <color name="home_text_default_color">#ff333333</color>
+    <color name="main_text_color_grey">#ff595056</color>
+    <color name="main_pink">#ffff6699</color>
+    <color name="daren_desc_color">#ffccc2c9</color>
+    <color name="daren_nickname_color">#ff595056</color>
+    <color name="main_pink_tips2">#ccff6699</color>
+    <color name="title_color">#ff80737b</color>
+    <color name="yellow">#ffffbf80</color>
+    <color name="light_gray">#ff999999</color>
+
+    <color name="shopcart_brown">#ff595056</color>
+    <color name="shopcart_pink">#ffff6699</color>
+    <color name="goods_item_bg">#fffaf9f9</color>
+    <color name="main_text_color">#ff666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="shopcart_light_brown">#ff80737b</color>
+    <color name="meilishuo_gray">#ff80737b</color>
+</resources>

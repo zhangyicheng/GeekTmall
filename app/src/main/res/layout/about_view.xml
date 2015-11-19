@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="关于极客" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_below="@id/home_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/content_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="版本：1.0"
+                android:textColor="@color/content_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+<ImageView
+    android:id="@+id/line"
+    android:layout_below="@id/layout"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/content_gray"/>
+    <Button
+        android:id="@+id/protocol"
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_grey_bg"
+        android:text="使用条款和协议"
+        android:textColor="@color/content_black" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_below="@id/protocol"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_grey_bg"
+        android:text="关于极客特购"
+        android:textColor="@color/content_black" />
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/content_gray"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="成都极客特购科技有限公司"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

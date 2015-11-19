@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/title"
+            style="@style/headerTextStyle"
+            android:text="发现想要"
+            android:layout_centerInParent="true" />
+        <com.geek.geekmall.views.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshStikyScrollView
+        android:id="@+id/find_scrollview"
+        android:layout_below="@id/home_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/discovery_want"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <com.geek.geekmall.views.indicator.TabPageIndicator
+                android:id="@+id/find_indicator"
+                android:tag="sticky"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+            <com.geek.geekmall.views.ScrollViewPager
+                android:id="@+id/home_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshStikyScrollView>
+
+    <ImageView
+        android:id="@+id/return_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_quick_return"/>
+</RelativeLayout>

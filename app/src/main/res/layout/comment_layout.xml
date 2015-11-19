@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="评价" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/store_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/home_header"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar_default" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cover"
+            android:singleLine="true"
+            android:text="商家："
+            android:textColor="@color/content_black" />
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/text1"
+            android:singleLine="true"
+            android:text="我的小店"
+            android:textColor="@color/pink" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="共1件"
+            android:textColor="@color/content_black" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/products"
+        android:layout_below="@id/store_name_layout"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/commit"
+        android:scrollbars="none"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_pink_bg"
+        android:text="提交"
+        android:textColor="@color/btn_pink_white_selector" />
+</RelativeLayout>

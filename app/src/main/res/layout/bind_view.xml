@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="绑定手机号码" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/avator"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/avatar_default" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="name"
+        android:textColor="@color/content_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:layout_toLeftOf="@+id/code_btn"
+                android:text=""
+                android:textColor="@color/content_black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/code_btn"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_pink_bg"
+                android:enabled="false"
+                android:text="获取"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/btn_pink_white_selector" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/content_gray" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/content_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_pink_bg"
+        android:text="下一步"
+        android:textColor="@color/btn_pink_white_selector" />
+</LinearLayout>

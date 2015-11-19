@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/empty_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/empty_page_margin_top"
+            android:src="@drawable/shoppingcart_ico_shoppingcart" />
+
+        <com.geek.geekmall.views.CustomTextView
+            style="@style/EmptyDataFirstTextStyle"
+            android:text="@string/title_shopping_empty" />
+
+        <com.geek.geekmall.views.CustomTextView
+            style="@style/EmptyDataSecondTextStyle"
+            android:text="@string/title_shopping_prompt" />
+
+        <com.geek.geekmall.views.CustomTextView
+            android:id="@+id/btn_to_shopping"
+            style="@style/EmptyDataButtonTextStyle"
+            android:text="@string/btn_go_to_saunter"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

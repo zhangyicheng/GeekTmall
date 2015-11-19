@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="提现" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提现金额"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/remain"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="0.00元"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_pink_bg"
+        android:text="提现"
+        android:textColor="@color/btn_pink_white_selector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/cash_note" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/cash_note1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/cash_note2" />
+        <TextView
+            android:id="@+id/my_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/pink"
+            android:text="@string/cash_note3" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/home_bg_toolbar"
+    android:gravity="center_vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:visibility="visible">
+
+    <CheckBox
+        android:id="@+id/all_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/shopping_cart_radio_selector"
+        android:clickable="true"
+        android:textSize="16.0sp"
+        android:textColor="@color/shopcart_brown"
+        android:text="@string/text_select_all"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center|right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/label_total_price"
+                    android:textColor="@color/pink"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="￥0"
+                    android:textColor="@color/pink"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="100.0dip"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pink_bg"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="去结算"
+        android:textColor="@color/btn_pink_white_selector"
+        android:textSize="16.0sp" />
+</LinearLayout>

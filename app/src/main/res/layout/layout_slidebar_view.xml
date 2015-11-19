@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_slidebar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_slidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginTop="2.0dip"
+        android:src="@drawable/index_gongju_icon" />
+
+    <ImageView
+        android:id="@+id/iv_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2.0dip"
+        android:layout_toRightOf="@+id/iv_slidebar"
+        android:src="@drawable/me_bg_bubble_small_new"
+        android:visibility="invisible" />
+
+    <com.geek.geekmall.views.CustomTextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-6.0dip"
+        android:layout_toRightOf="@+id/iv_slidebar"
+        android:background="@drawable/me_bg_bubble_small"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10.0sp"
+        android:visibility="invisible" />
+</RelativeLayout>

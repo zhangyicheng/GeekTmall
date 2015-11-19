@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="noMultiTouchNoTitleBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+    <style name="noMultiTouchTranslucentNoTitleBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="multiTouchNotitleBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:splitMotionEvents">true</item>
+        <item name="android:windowEnableSplitTouch">true</item>
+    </style>
+
+
+</resources>

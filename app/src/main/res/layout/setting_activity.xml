@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/mainHeader">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="设置"
+            style="@style/headerTextStyle" />
+
+    </RelativeLayout>
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/version_update"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <View
+        style="@style/borderline_slide"
+        android:layout_height="1.0px" />
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/clear_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionNum="34k"
+        app:optionNumColor="@color/content_gray"
+        app:optionTitle="@string/clear_cache"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <View
+        style="@style/borderline_slide"
+        android:layout_height="1.0px" />
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/banding"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/banding_setting"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <View
+        style="@style/borderline_slide"
+        android:layout_height="1.0px" />
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="登录密码"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/pay_password"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="支付密码"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+</LinearLayout>

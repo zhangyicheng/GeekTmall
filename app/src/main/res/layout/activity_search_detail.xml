@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn" />
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toRightOf="@id/back"
+            android:background="@drawable/classification_icon_input_search"
+            android:gravity="center_vertical"
+            android:hint="请输入商品名或者关键字"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textColorHint="@color/daren_desc_color" />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/index_search_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/suggest_list"
+        android:listSelector="@color/transparent"
+        android:divider="@color/content_gray"
+        android:dividerHeight="1px"
+        android:visibility="gone"
+        android:cacheColorHint="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/history_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_header_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="最近搜索"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/delete_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="删除"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@color/transparent"
+        android:columnWidth="70dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="8dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="auto_fit"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_header_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="热门推荐"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/diy_progress_bar" />
+
+    <GridView
+        android:id="@+id/hot_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@color/transparent"
+        android:columnWidth="50dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="8dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="auto_fit"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

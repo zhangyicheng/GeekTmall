@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/mainHeader">
+
+
+        <com.geek.geekmall.views.SlideBarView
+            android:id="@+id/sidebar"
+            android:visibility="gone"
+            style="@style/SlideBarTtyle"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_centerInParent="true"
+            style="@style/headerTextStyle"
+            android:text="商城" />
+        <com.geek.geekmall.views.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/diy_progress_bar" />
+
+    <com.geek.geekmall.views.indicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/home_header" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/indicator" />
+
+    <ImageView
+        android:id="@+id/return_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_quick_return"
+        android:visibility="gone" />
+</RelativeLayout>

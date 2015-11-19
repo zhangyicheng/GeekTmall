@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/search_default" />
+
+        <TextView
+            android:id="@+id/name"
+            android:text="分类"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"/>
+
+    </RelativeLayout>
+
+
+    <com.geek.geekmall.views.GridViewForScrollView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:cacheColorHint="@color/transparent"
+        android:columnWidth="90dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="auto_fit"
+        android:scrollbars="none" />
+</LinearLayout>

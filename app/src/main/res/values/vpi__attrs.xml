@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 Jake Wharton
+     Copyright (C) 2011 Patrik Åkerfeldt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference"/>
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference"/>
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference"/>
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <attr name="centered" format="boolean"/>
+    <attr name="selectedColor" format="color"/>
+    <attr name="strokeWidth" format="dimension"/>
+    <attr name="unselectedColor" format="color"/>
+
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered"/>
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color"/>
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color"/>
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation"/>
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension"/>
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean"/>
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color"/>
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth"/>
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="LinePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered"/>
+        <!-- Color of the unselected lines that represent the pages. -->
+        <attr name="unselectedColor"/>
+        <!-- Color of the selected line that represents the current page. -->
+        <attr name="selectedColor"/>
+        <!-- Width of each indicator line. -->
+        <attr name="lineWidth" format="dimension"/>
+        <!-- Width of each indicator line's stroke. -->
+        <attr name="strokeWidth"/>
+        <!-- Width of the gap between each indicator line. -->
+        <attr name="gapWidth" format="dimension"/>
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitlePageIndicator">
+        <!-- 距离左侧和右侧的距离 -->
+        <attr name="clipPadding" format="dimension"/>
+        <!-- 底边线和底边指示的颜色 -->
+        <attr name="footerColor" format="color"/>
+        <!-- 底边线的高度 -->
+        <attr name="footerLineHeight" format="dimension"/>
+        <!-- 指示样式选择，尖角还条形 -->
+        <attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr>
+        <!-- 指示的高度 -->
+        <attr name="footerIndicatorHeight" format="dimension"/>
+        <!-- 效果就是指示变宽了 -->
+        <attr name="footerIndicatorUnderlinePadding" format="dimension"/>
+        <!-- 文字tittle和底边指示的距离 -->
+        <attr name="footerPadding" format="dimension"/>
+        <!-- 指示的位置，tittle的上面，还是tittle的下面 -->
+        <attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        <!-- 被选择tittle的颜色 -->
+        <attr name="selectedColor"/>
+        <!-- 被选择的tittle显示是否加粗 -->
+        <attr name="selectedBold" format="boolean"/>
+        <!-- 未被选择的tittle的颜色 -->
+        <attr name="android:textColor"/>
+        <!-- 文字的大小 -->
+        <attr name="android:textSize"/>
+        <!-- 下一个item距离上一个item多远时，上一个item开始移动消失 -->
+        <attr name="titlePadding" format="dimension"/>
+        <!-- 指示和上边view的距离 -->
+        <attr name="topPadding" format="dimension"/>
+        <!-- 整体的背景色 -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="UnderlinePageIndicator">
+        <!-- Whether or not the selected indicator fades. -->
+        <attr name="fades" format="boolean"/>
+        <!-- Length of the delay to fade the indicator. -->
+        <attr name="fadeDelay" format="integer"/>
+        <!-- Length of the indicator fade to transparent. -->
+        <attr name="fadeLength" format="integer"/>
+        <!-- Color of the selected line that represents the current page. -->
+        <attr name="selectedColor"/>
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+</resources>

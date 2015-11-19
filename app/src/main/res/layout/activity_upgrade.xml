@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6ee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="掌柜升级" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_white_bg">
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/experience_icon" />
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_toRightOf="@id/head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:text="甩手小掌柜" />
+                <TextView
+                    android:id="@+id/note1"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/light_gray"
+                    android:layout_toRightOf="@id/head"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name1"
+                    android:text="社交●分享●让碎片时间也能产生伟大价值" />
+
+                <Button
+                    android:id="@+id/commit1"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_pink_bg"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@color/btn_pink_white_selector" />
+                <TextView
+                    android:id="@+id/status_lever1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_alignParentRight="true"
+                    android:text="当前等级"
+                    android:visibility="gone"
+                    android:textColor="@color/pink" />
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@id/head"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@id/note1"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="注册后即免费成为“甩手小掌柜”，免赠销售额1%的提成权限。分享“首单免费”领取页面给朋友或朋友圈、微博、QQ空间等社交媒体，利用碎片时间赚零花。"
+                        android:textColor="@color/light_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_white_bg">
+
+                <ImageView
+                    android:id="@+id/head1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/golden_icon" />
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_toRightOf="@id/head1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:text="签约掌柜" />
+                <TextView
+                    android:id="@+id/note2"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/light_gray"
+                    android:layout_toRightOf="@id/head1"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name2"
+                    android:text="聊聊时下潮流，分享美妆体验，晒晒穿衣心情" />
+
+                <Button
+                    android:id="@+id/commit2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_pink_bg"
+                    android:text="升级"
+                    android:textColor="@color/btn_pink_white_selector" />
+                <TextView
+                    android:id="@+id/status_lever2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:text="当前等级"
+                    android:textColor="@color/pink" />
+                <ImageView
+                    android:id="@+id/line2"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@id/head1"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@id/note2"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="升级成为“签约掌柜”获得销售额3%的提成权限。"
+                        android:textColor="@color/light_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_white_bg">
+
+                <ImageView
+                    android:id="@+id/head2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/diamend_icon" />
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_toRightOf="@id/head2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:text="大掌柜" />
+                <TextView
+                    android:id="@+id/note3"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/light_gray"
+                    android:layout_toRightOf="@id/head2"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name3"
+                    android:text="发现、想要、私藏、分享…顺便赚零花才是生活" />
+
+                <Button
+                    android:id="@+id/commit3"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_pink_bg"
+                    android:text="升级"
+                    android:textColor="@color/btn_pink_white_selector" />
+                <TextView
+                    android:id="@+id/status_lever3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:text="当前等级"
+                    android:visibility="gone"
+                    android:textColor="@color/pink" />
+                <ImageView
+                    android:id="@+id/line3"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@id/head2"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@id/note3"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="升级成为“大掌柜”获得销售额5%的提成权限。"
+                        android:textColor="@color/light_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_white_bg">
+
+                <ImageView
+                    android:id="@+id/head3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dailishang_icon" />
+                <TextView
+                    android:id="@+id/name4"
+                    android:layout_toRightOf="@id/head3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:text="代理商" />
+                <TextView
+                    android:id="@+id/note4"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/light_gray"
+                    android:layout_toRightOf="@id/head3"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name4"
+                    android:text="我们真诚专业的努力，只为给您搭建更大的舞台，仅限公司资质可升级为代理商" />
+
+                <Button
+                    android:id="@+id/commit4"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_pink_bg"
+                    android:text="升级"
+                    android:textColor="@color/btn_pink_white_selector" />
+                <TextView
+                    android:id="@+id/status_lever4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:text="当前等级"
+                    android:visibility="gone"
+                    android:textColor="@color/pink" />
+                <ImageView
+                    android:id="@+id/line4"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@id/head3"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@id/note4"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_gray"
+                        android:text="详情请咨询400-069-0699"
+                        android:autoLink="phone"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

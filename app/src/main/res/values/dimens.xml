@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="home_tab_icon_text_interval">3.0dip</dimen>
+    <dimen name="home_tab_text_size">12.0dip</dimen>
+    <dimen name="home_tab_line_width">1.0dip</dimen>
+    <dimen name="dialog_corner_radius">3.0dip</dimen>
+    <dimen name="option_item_height">50.0dip</dimen>
+    <dimen name="option_item_height2">45.0dip</dimen>
+    <dimen name="shopping_cart_coupon_width">110.0dip</dimen>
+    <dimen name="main_title_bar_height">50.0dip</dimen>
+    <dimen name="empty_page_margin_top">100.0dip</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+</resources>

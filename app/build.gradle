@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'geek'
+            keyPassword 'geekmall'
+            storeFile file('D:\\geek\\apksign\\geek.jks')
+            storePassword 'geekmall'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.geek.geekmall"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 7
+        versionName "1.0.7"
+    }
+    buildTypes {
+        release {
+            // 是否进行混淆
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+        wandoujia {}
+        baidu {}
+        c360 {}
+        uc {}
+        yingyongbao {}
+        c91 {}
+        anzhuo {}
+        xiaomi {}
+        meizu {}
+        oppo {}
+        lenovo {}
+        zte {}
+        huawei {}
+        anzhi {}
+        yingyonghui {}
+        mumayi {}
+        c3ganzhuo {}
+        suning {}
+        taobao {}
+        mogu {}
+        sougou {}
+        jifeng {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name: 'lib', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    //    compile 'com.afollestad:material-dialogs:0.7.2.4'
+    //    compile 'com.makeramen:roundedimageview:2.0.1'
+    //    compile files('libs/nbs.newlens.agent.jar')
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'se.emilsjolander:StickyScrollViewItems:1.1.0'
+    compile 'com.github.nirhart:parallaxscroll:1.0'
+    //    compile files('libs/weibosdkcore_v3.1.1.jar')
+    compile 'com.google.zxing:core:3.2.0'
+    compile 'com.google.zxing:android-integration:3.2.0'
+    //    compile 'de.greenrobot:greendao:1.3.7'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+
+}
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/mainHeader">
+
+
+        <com.geek.geekmall.views.SlideBarView
+            android:id="@+id/sidebar"
+            android:visibility="gone"
+            style="@style/SlideBarTtyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="购物车" />
+
+        <com.geek.geekmall.views.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/carts_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_bar"
+        android:layout_below="@id/home_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shoppingcart_ico_shoppingcart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购物车还是空的"
+                    android:textColor="@color/content_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="快去挑选喜欢的宝贝吧"
+                    android:textColor="@color/content_gray"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/to_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_done_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="去逛逛"
+                    android:textColor="@color/content_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <com.geek.geekmall.views.ExpandListViewForScrollView
+                android:id="@+id/cart_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:listSelector="@color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <include
+                layout="@layout/shopping_cart_footer"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <include
+        layout="@layout/shopping_cart_footer_pan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragment"-->
+    <!--class="com.geek.geekmall.home.activity.ShoppingCartFragment"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent" />-->
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8f8f8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/mainHeader">
+
+
+        <com.geek.geekmall.views.SlideBarView
+            android:id="@+id/sidebar"
+            android:visibility="gone"
+            style="@style/SlideBarTtyle"
+            android:layout_centerVertical="true" />
+        <TextView
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="我的" />
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/goods_ico_share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+    <com.ecloud.pulltozoomview.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    </com.ecloud.pulltozoomview.PullToZoomScrollViewEx>
+
+
+</LinearLayout>

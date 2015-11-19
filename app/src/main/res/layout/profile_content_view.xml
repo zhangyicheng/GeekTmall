@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/un_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/waiting_pay"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/content_black" />
+            <TextView
+                android:id="@+id/un_pay_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/un_pay"
+                android:layout_alignEnd="@id/un_pay"
+                android:singleLine="true"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/un_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/waiting_send"
+                android:gravity="center"
+                android:text="待发货"
+                android:textColor="@color/content_black" />
+            <TextView
+                android:id="@+id/un_send_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/un_send"
+                android:layout_alignEnd="@id/un_send"
+                android:singleLine="true"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/un_recevie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/wating_receipt"
+                android:gravity="center"
+                android:text="待收货"
+                android:textColor="@color/content_black" />
+            <TextView
+                android:id="@+id/un_recevie_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/un_recevie"
+                android:layout_alignEnd="@id/un_recevie"
+                android:singleLine="true"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/un_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/wating_comment"
+                android:gravity="center"
+                android:text="待评价"
+                android:textColor="@color/content_black" />
+            <TextView
+                android:id="@+id/un_common_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/un_common"
+                android:layout_alignEnd="@id/un_common"
+                android:singleLine="true"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/after_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/after_sale_service"
+                android:gravity="center"
+                android:text="售后"
+                android:textColor="@color/content_black" />
+            <TextView
+                android:id="@+id/after_sale_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/after_sale"
+                android:layout_alignEnd="@id/after_sale"
+                android:singleLine="true"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/agency"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/my_jingxiaoshang"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/purse"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/profile_over"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/account_info"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/my_account_info"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <View
+        style="@style/borderline_slide"
+        android:layout_height="1.0px" />
+
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/account_about"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/my_about"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <View
+        style="@style/borderline_slide"
+        android:layout_height="1.0px" />
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/account_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/my_suggestion"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <View
+        style="@style/borderline_slide"
+        android:layout_height="1.0px" />
+
+    <com.geek.geekmall.views.OptionsItemView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:optionArrow="@drawable/circle_info_arrow"
+        app:optionTitle="@string/setting_more"
+        app:optionTitleColor="@color/content_black"
+        app:optionTitleSize="14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="11dp"
+        android:autoLink="phone"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/my_telephone"
+        android:textColor="@color/content_black" />
+</LinearLayout>

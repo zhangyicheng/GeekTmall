@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="掌柜认证" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/pink"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="为了确保信息正确，请再次输入"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_pink_pressed"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pink" />
+
+        <EditText
+            android:id="@+id/identity"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="身份证号码"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pink" />
+
+        <EditText
+            android:id="@+id/alipayName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="支付宝账号"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="姓名必须是支付宝账号绑定的姓名,否则将不能提现"
+        android:textColor="@color/pink"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_pink_bg"
+        android:text="完成"
+        android:textColor="@color/btn_pink_white_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="绑定以后不允许修改，若要修改请联系我们" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:textSize="16sp"
+            android:text="@string/my_telephone" />
+    </LinearLayout>
+
+</LinearLayout>

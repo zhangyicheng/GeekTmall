@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <com.geek.geekmall.views.RecyclerImageView
+            android:id="@+id/cover"
+            android:layout_width="166dp"
+            android:layout_height="146dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/product_home_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="新街头注新街头注意"
+                android:textColor="@color/title_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="亲，首单免费哦"
+                android:textColor="@color/content_gray"
+                android:textSize="13sp"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/sale"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/first"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥45"
+                    android:textColor="@color/pink"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/oldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="￥90"
+                    android:textColor="@color/content_black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person"
+                    android:gravity="center_vertical"
+                    android:text="0人已买"
+                    android:textColor="@color/content_gray"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_pink_bg"
+                    android:text="去购买"
+                    android:textColor="@color/btn_pink_white_selector"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="掌柜认证" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_pink_pressed"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/identity"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入身份证号码"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pink" />
+
+        <EditText
+            android:id="@+id/alipayName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="支付宝账号"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pink" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入姓名"
+            android:paddingLeft="10dp"
+            android:textColor="@color/content_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="为了保证信息是正确，请再次输入"
+        android:textColor="@color/pink" />
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_pink_bg"
+        android:text="完成"
+        android:textColor="@color/btn_pink_white_selector" />
+</LinearLayout>

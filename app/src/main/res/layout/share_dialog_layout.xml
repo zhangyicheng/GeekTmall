@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="0.0dip">
+
+    <TextView
+        android:id="@+id/share_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="25.0dip"
+        android:background="#00ffffff"
+        android:gravity="center_horizontal"
+        android:text="@string/share_title"
+        android:textColor="@color/content_black"
+        android:textSize="18.0sp" />
+
+    <LinearLayout
+        android:id="@+id/share_dialog_items"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weixin_friend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/share_ico_bg"
+                android:drawableTop="@drawable/ico_share_weixin"
+                android:gravity="center_horizontal"
+                android:padding="5.0dip"
+                android:text="@string/share_weixin_friend"
+                android:textColor="@color/meilishuo_gray" />
+
+            <TextView
+                android:id="@+id/weixin_friend_circle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/share_ico_bg"
+                android:drawableTop="@drawable/ico_share_circle"
+                android:gravity="center_horizontal"
+                android:padding="5.0dip"
+                android:text="@string/share_weixin_circle"
+                android:textColor="@color/meilishuo_gray" />
+
+            <TextView
+                android:id="@+id/qzone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/share_ico_bg"
+                android:drawableTop="@drawable/ico_share_qzone"
+                android:gravity="center_horizontal"
+                android:padding="5.0dip"
+                android:text="@string/share_qzone"
+                android:textColor="@color/meilishuo_gray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qq_friends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/share_ico_bg"
+                android:drawableTop="@drawable/ico_qq_share"
+                android:gravity="center_horizontal"
+                android:padding="5.0dip"
+                android:text="@string/share_qq_friend"
+                android:textColor="@color/meilishuo_gray" />
+
+            <TextView
+                android:id="@+id/sina_weibo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/share_ico_bg"
+                android:drawableTop="@drawable/ico_share_sina"
+                android:gravity="center_horizontal"
+                android:padding="5.0dip"
+                android:text="@string/share_weibo"
+                android:textColor="@color/meilishuo_gray" />
+
+
+            <View
+                android:id="@+id/block_0"
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.0"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/block_1"
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/content_gray" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/btn_pink_bg"
+            android:paddingBottom="8.0dip"
+            android:paddingLeft="30.0dip"
+            android:paddingRight="30.0dip"
+            android:paddingTop="8.0dip"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_banner_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/sale_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="3-9折"
+            android:visibility="gone"
+            android:textColor="@color/pink" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/sale_off"
+            android:singleLine="true"
+            android:text="MOCO春季特卖，全场优惠水电费"
+            android:textColor="@color/content_black" />
+
+        <TextView
+            android:id="@+id/remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/likes"
+            android:text="还剩3天"
+            android:visibility="gone"
+            android:textColor="@color/content_gray" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/like_icon"
+            android:gravity="center"
+            android:maxWidth="75dp"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:drawablePadding="-5dp"
+            android:singleLine="true"
+            android:text="2323"
+            android:textColor="@color/pink" />
+
+    </RelativeLayout>
+</LinearLayout>

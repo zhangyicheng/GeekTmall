@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/shopping_cart_coupon_width"
+    android:layout_height="55.0dip">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="100.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/coupon_bg">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/title_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <com.geek.geekmall.views.BaselineCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:text="￥"
+                    android:textColor="@color/yellow"
+                    android:textSize="16.0sp" />
+
+                <com.geek.geekmall.views.BaselineCustomTextView
+                    android:id="@+id/first_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/yellow"
+                    android:textSize="26.0sp" />
+            </LinearLayout>
+
+            <com.geek.geekmall.views.CustomTextView
+                android:id="@+id/second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_lay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="4.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="满300元减sdafjadlkfjlksadjflksadjflkjsdalkfjslkdfjsdkl"
+                android:textColor="@color/yellow"
+                android:textSize="13.0sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        style="@style/header">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/backBtn"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:layout_centerInParent="true"
+            android:text="客户人数" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/customer_list"
+        android:layout_below="@id/home_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/content_gray"
+        android:dividerHeight="1px"
+        ptr:ptrShowIndicator="false"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+    <ImageView
+        android:id="@+id/location"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.5"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_my_location_black_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/diy_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

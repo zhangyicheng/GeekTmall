@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:tag="sticky"
+        android:id="@+id/home_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/day_recommend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/home_check_selector"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="每日推荐"
+            android:textColor="@color/title_black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/theme_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/home_check_selector"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="风格主题"
+            android:textColor="@color/title_black" />
+
+        <RadioButton
+            android:id="@+id/discovery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/home_check_selector"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="发现想要"
+            android:textColor="@color/title_black" />
+    </RadioGroup>
+</LinearLayout>
